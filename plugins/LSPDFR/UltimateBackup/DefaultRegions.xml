@@ -227,114 +227,110 @@
 			</VehicleSet>
 		</CustomRegion>
 		<LosSantosCity>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="30" pax="1" pax_chance="40">lcpd2</Vehicle>
-					<Vehicle chance="40" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="30" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle chance="33" pax="1" pax_chance="40">POLICE</Vehicle>
+					<Vehicle chance="33" pax="1" pax_chance="25">POLICE2</Vehicle>
+					<Vehicle chance="34" pax="1" pax_chance="25">POLICE3</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="40" comp_pants="36" comp_shoes="26" comp_accessories="59" comp_shirtoverlay="56">MP_M_FREEMODE_01</Ped>
+					<Ped chance="25" comp_shirt="2" comp_accessories="2" prop_hats="1" prop_glasses="4">S_M_Y_COP_01</Ped>
+					<Ped chance="25" random_props="True">S_M_Y_COP_01</Ped>
+					<Ped chance="5" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
+					<Ped chance="5" comp_shirt="2" comp_accessories="2" prop_hats="0">S_F_Y_COP_01</Ped>
+
+					<!-- peds with rain outfit will be chosen when the weather is rainy. The chance is grouped separately -->
+					<Ped rain_outfit="true" chance="90" comp_pants="36" comp_shoes="26" comp_accessories="6" comp_shirtoverlay="218" tex_shirtoverlay="6" prop_hats="47">MP_M_FREEMODE_01</Ped>
+					<Ped rain_outfit="true" chance="10" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_shirtoverlay="191" tex_shirtoverlay="4">MP_F_FREEMODE_01</Ped>
+
+					<!-- peds with snow outfit will be chosen when the weather is snowy. The chance is grouped separately -->
+					<Ped snow_outfit="true" chance="90" comp_shirt="18" comp_pants="36" comp_shoes="26" comp_accessories="28" comp_shirtoverlay="71" tex_shirtoverlay="10" prop_hats="47">MP_M_FREEMODE_01</Ped>
+					<Ped snow_outfit="true" chance="10" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="102" comp_shirtoverlay="66" tex_shirtoverlay="11" prop_hats="47">MP_F_FREEMODE_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
 					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
 				</NonLethals>
 				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+					<HandGun chance="90" comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+					<HandGun chance="10" comp_1="COMPONENT_AT_PI_FLSH">WEAPON_COMBATPISTOL</HandGun>
 				</HandGuns>
 				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+					<LongGun chance="67" comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+					<LongGun chance="33" comp_1="COMPONENT_AT_AR_FLSH">WEAPON_PUMPSHOTGUN</LongGun>
 				</LongGuns>
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet spawn_distance="150">
 				<Vehicles>
-					<Vehicle chance="30" pax="1" pax_chance="40">lcpd2</Vehicle>
-					<Vehicle chance="40" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="30" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle chance="50" pax="1" pax_chance="40">SHERIFF</Vehicle>
+					<Vehicle chance="50" pax="1" pax_chance="25">SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="90" comp_shirt="2" prop_hats="1" prop_glasses="2">S_M_Y_SHERIFF_01</Ped>
+					<Ped chance="10" comp_shirt="2" prop_hats="1">S_F_Y_SHERIFF_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
 					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
 				</NonLethals>
 				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+					<HandGun chance="90" comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+					<HandGun chance="10" comp_1="COMPONENT_AT_PI_FLSH">WEAPON_COMBATPISTOL</HandGun>
 				</HandGuns>
 				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+					<LongGun chance="67" comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+					<LongGun chance="33" comp_1="COMPONENT_AT_AR_FLSH">WEAPON_PUMPSHOTGUN</LongGun>
 				</LongGuns>
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet spawn_distance="150">
 				<Vehicles>
-					<Vehicle chance="30" pax="1" pax_chance="40">lcpd2</Vehicle>
-					<Vehicle chance="40" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="30" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle chance="50" pax="1" pax_chance="33">SHERIFF</Vehicle>
+					<Vehicle chance="50" pax="1" pax_chance="25">SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="90" comp_shirt="2" prop_hats="1" prop_glasses="2">S_M_Y_SHERIFF_01</Ped>
+					<Ped chance="10" comp_shirt="2" prop_hats="1">S_F_Y_SHERIFF_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
 					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
 				</NonLethals>
 				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+					<HandGun chance="90" comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+					<HandGun chance="10" comp_1="COMPONENT_AT_PI_FLSH">WEAPON_COMBATPISTOL</HandGun>
 				</HandGuns>
 				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+					<LongGun chance="67" comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+					<LongGun chance="33" comp_1="COMPONENT_AT_AR_FLSH">WEAPON_PUMPSHOTGUN</LongGun>
 				</LongGuns>
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet spawn_distance="150">
 				<Vehicles>
-					<Vehicle chance="30" pax="1" pax_chance="40">lcpd2</Vehicle>
-					<Vehicle chance="40" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="30" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle chance="75" pax="1" pax_chance="25">POLICEOLD1</Vehicle>
+					<Vehicle chance="25" pax="1" pax_chance="25">POLICEOLD2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="60" comp_accessories="1" prop_glasses="1" prop_hats="1">S_M_M_SNOWCOP_01</Ped>
+					<Ped chance="40" prop_glasses="2" prop_hats="2">S_M_M_SNOWCOP_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
 					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
 				</NonLethals>
 				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+					<HandGun chance="90" comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+					<HandGun chance="10" comp_1="COMPONENT_AT_PI_FLSH">WEAPON_COMBATPISTOL</HandGun>
 				</HandGuns>
 				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+					<LongGun chance="67" comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+					<LongGun chance="33" comp_1="COMPONENT_AT_AR_FLSH">WEAPON_PUMPSHOTGUN</LongGun>
 				</LongGuns>
 			</VehicleSet>
 		</NorthYankton>
@@ -467,82 +463,202 @@
 			</VehicleSet>
 		</CustomRegion>
 		<LosSantosCity>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet chance="70">
 				<Vehicles>
-					<Vehicle chance="80" pax="1" pax_chance="40">lcpdalamo</Vehicle>
-					<Vehicle chance="20" pax="1" pax_chance="60">ncar</Vehicle>
+					<Vehicle chance="100" pax="1" pax_chance="25" color="Black">POLICE4</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped comp_shirt="1" comp_pants="2" comp_decals="1" prop_glasses="2" tex_glasses="1" prop_hats="0">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+			<VehicleSet chance="30">
+				<Vehicles>
+					<Vehicle>POLICEB</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_pants="1" comp_decals="2" prop_glasses="1" tex_glasses="2" prop_hats="1">S_M_Y_HWAYCOP_01</Ped>
 				</Peds>
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet chance="40">
 				<Vehicles>
-					<Vehicle chance="80" pax="1" pax_chance="40">lcpdalamo</Vehicle>
-					<Vehicle chance="20" pax="1" pax_chance="60">ncar</Vehicle>
+					<Vehicle pax="1" pax_chance="25" color="Black">POLICE4</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped comp_pants="2" comp_decals="1" prop_glasses="2" tex_glasses="1" prop_hats="0">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+			<VehicleSet chance="60">
+				<Vehicles>
+					<Vehicle>POLICEB</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_pants="1" comp_decals="2" prop_glasses="1" tex_glasses="2" prop_hats="1">S_M_Y_HWAYCOP_01</Ped>
 				</Peds>
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet chance="40">
 				<Vehicles>
-					<Vehicle chance="80" pax="1" pax_chance="40">lcpdalamo</Vehicle>
-					<Vehicle chance="20" pax="1" pax_chance="60">ncar</Vehicle>
+					<Vehicle pax="1" pax_chance="25" color="Black">POLICE4</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped comp_pants="2" comp_decals="1" prop_glasses="2" tex_glasses="1" prop_hats="0">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+			<VehicleSet chance="60">
+				<Vehicles>
+					<Vehicle>POLICEB</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_pants="1" comp_decals="2" prop_glasses="1" tex_glasses="2" prop_hats="1">S_M_Y_HWAYCOP_01</Ped>
 				</Peds>
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="80" pax="1" pax_chance="40">lcpdalamo</Vehicle>
-					<Vehicle chance="20" pax="1" pax_chance="60">ncar</Vehicle>
+					<Vehicle chance="75" pax="1" pax_chance="25">POLICEOLD1</Vehicle>
+					<Vehicle chance="25" pax="1" pax_chance="25">POLICEOLD2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="50" comp_accessories="1" prop_glasses="1" prop_hats="1">S_M_M_SNOWCOP_01</Ped>
+					<Ped chance="50" prop_glasses="2" prop_hats="2">S_M_M_SNOWCOP_01</Ped>
 				</Peds>
 			</VehicleSet>
 		</NorthYankton>
 	</StatePatrol>
 	<LocalSWAT>
-		<LosSantosCity>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
 			<VehicleSet spawn_distance="80">
 				<Vehicles>
 					<Vehicle pax="3" pax_chance="100" color="black">FBI2</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped prop_hats="1">ig_lcswat</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="75">WEAPON_COMBATPISTOL</HandGun>
+					<HandGun chance="25">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="67">WEAPON_ADVANCEDRIFLE</LongGun>
+					<LongGun chance="33">WEAPON_ASSAULTSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="80">
+				<Vehicles>
+					<Vehicle pax="3" pax_chance="100" color="black">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped prop_hats="1">ig_lcswat</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="75">WEAPON_COMBATPISTOL</HandGun>
+					<HandGun chance="25">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="67">WEAPON_ADVANCEDRIFLE</LongGun>
+					<LongGun chance="33">WEAPON_ASSAULTSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
+		<LosSantosCity>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle pax="3" pax_chance="100" color="black">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_decals="1" tex_decals="1" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -559,12 +675,12 @@
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet spawn_distance="150">
 				<Vehicles>
-					<Vehicle pax="3" pax_chance="100" color="black">FBI2</Vehicle>
+					<Vehicle pax="3" pax_chance="100">SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="1" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -581,12 +697,12 @@
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet spawn_distance="150">
 				<Vehicles>
-					<Vehicle pax="3" pax_chance="100" color="black">FBI2</Vehicle>
+					<Vehicle pax="3" pax_chance="100">SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="1" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -603,12 +719,13 @@
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet spawn_distance="150">
 				<Vehicles>
-					<Vehicle pax="3" pax_chance="100" color="black">FBI2</Vehicle>
+					<Vehicle chance="75" pax="3" pax_chance="100">POLICEOLD1</Vehicle>
+					<Vehicle chance="25" pax="3" pax_chance="100">POLICEOLD2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -626,13 +743,135 @@
 		</NorthYankton>
 	</LocalSWAT>
 	<NooseSWAT>
-		<LosSantosCity>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
 			<VehicleSet spawn_distance="120">
 				<Vehicles>
 					<Vehicle pax="3" pax_chance="100">nstockade</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped prop_hats="1">ig_lcswat</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="75">WEAPON_COMBATPISTOL</HandGun>
+					<HandGun chance="25">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="67">WEAPON_ADVANCEDRIFLE</LongGun>
+					<LongGun chance="33">WEAPON_ASSAULTSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="120">
+				<Vehicles>
+					<Vehicle pax="3" pax_chance="100">nstockade</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped prop_hats="1">ig_lcswat</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="75">WEAPON_COMBATPISTOL</HandGun>
+					<HandGun chance="25">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="67">WEAPON_ADVANCEDRIFLE</LongGun>
+					<LongGun chance="33">WEAPON_ASSAULTSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
+		<LosSantosCity>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle pax="7" pax_chance="100">RIOT</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -649,12 +888,12 @@
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
-			<VehicleSet spawn_distance="120">
+			<VehicleSet spawn_distance="200">
 				<Vehicles>
-					<Vehicle pax="3" pax_chance="100">nstockade</Vehicle>
+					<Vehicle pax="7" pax_chance="100">RIOT</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -671,12 +910,12 @@
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="120">
+			<VehicleSet spawn_distance="200">
 				<Vehicles>
-					<Vehicle pax="3" pax_chance="100">nstockade</Vehicle>
+					<Vehicle pax="7" pax_chance="100">RIOT</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -693,12 +932,12 @@
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="120">
+			<VehicleSet spawn_distance="200">
 				<Vehicles>
-					<Vehicle pax="3" pax_chance="100">nstockade</Vehicle>
+					<Vehicle pax="3" pax_chance="100">RIOT</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -716,6 +955,104 @@
 		</NorthYankton>
 	</NooseSWAT>
 	<LocalAir>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle livery="1" pax="1" pax_chance="100">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_tasks="2" prop_hats="1">S_M_Y_PILOT_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle livery="1" pax="1" pax_chance="100">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_tasks="2" prop_hats="1">S_M_Y_PILOT_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
 		<LosSantosCity>
 			<VehicleSet>
 				<Vehicles>
@@ -758,13 +1095,111 @@
 		</NorthYankton>
 	</LocalAir>
 	<NooseAir>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle pax="3" pax_chance="100">BUZZARD</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle pax="3" pax_chance="100">BUZZARD</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
 		<LosSantosCity>
 			<VehicleSet>
 				<Vehicles>
 					<Vehicle pax="3" pax_chance="100">BUZZARD</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 			</VehicleSet>
 		</LosSantosCity>
@@ -774,7 +1209,7 @@
 					<Vehicle pax="3" pax_chance="100">BUZZARD</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 			</VehicleSet>
 		</LosSantosCounty>
@@ -784,7 +1219,7 @@
 					<Vehicle pax="3" pax_chance="100">BUZZARD</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 			</VehicleSet>
 		</BlaineCounty>
@@ -794,7 +1229,7 @@
 					<Vehicle pax="3" pax_chance="100">BUZZARD</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped prop_hats="1">ig_lcswat</Ped>
+					<Ped comp_decals="1" tex_decals="2" prop_hats="1">S_M_Y_SWAT_01</Ped>
 				</Peds>
 			</VehicleSet>
 		</NorthYankton>
@@ -803,77 +1238,47 @@
 		<LosSantosCity>
 			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="50" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle chance="33" pax="1" pax_chance="50">POLICE</Vehicle>
+					<Vehicle chance="33" pax="1" pax_chance="43">POLICE2</Vehicle>
+					<Vehicle chance="34" pax="1" pax_chance="43">POLICE3</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped chance="60" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
 					<Ped chance="40" prop_hats="0">S_F_Y_COP_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
 			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="50" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle chance="50" pax="1" pax_chance="40">SHERIFF</Vehicle>
+					<Vehicle chance="50" pax="1" pax_chance="33">SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="60" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
-					<Ped chance="40" prop_hats="0">S_F_Y_COP_01</Ped>
+					<Ped comp_shirt="2" prop_hats="2">S_F_Y_SHERIFF_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
 			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="50" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle chance="50" pax="1" pax_chance="40">SHERIFF</Vehicle>
+					<Vehicle chance="50" pax="1" pax_chance="33">SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="60" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
-					<Ped chance="40" prop_hats="0">S_F_Y_COP_01</Ped>
+					<Ped comp_shirt="2" prop_hats="2">S_F_Y_SHERIFF_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
 			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="50" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle chance="75" pax="1" pax_chance="25">POLICEOLD1</Vehicle>
+					<Vehicle chance="25" pax="1" pax_chance="25">POLICEOLD2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="60" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
-					<Ped chance="40" prop_hats="0">S_F_Y_COP_01</Ped>
+					<Ped comp_shirt="2" prop_hats="2">S_F_Y_SHERIFF_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
 			</VehicleSet>
 		</NorthYankton>
 	</FemaleLocalPatrol>
@@ -881,82 +1286,112 @@
 		<LosSantosCity>
 			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="50" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle pax="1" pax_chance="40" color="White">POLICE4</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="60" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
-					<Ped chance="40" prop_hats="0">S_F_Y_COP_01</Ped>
+					<Ped>S_F_Y_RANGER_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
 			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="50" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle pax="1" pax_chance="40" color="White">POLICE4</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="60" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
-					<Ped chance="40" prop_hats="0">S_F_Y_COP_01</Ped>
+					<Ped>S_F_Y_RANGER_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
 			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="50" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle pax="1" pax_chance="40" color="White">POLICE4</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="60" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
-					<Ped chance="40" prop_hats="0">S_F_Y_COP_01</Ped>
+					<Ped>S_F_Y_RANGER_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
 			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" pax="1" pax_chance="40">lcpd5</Vehicle>
-					<Vehicle chance="50" pax="1" pax_chance="80">lcpdscout</Vehicle>
+					<Vehicle pax="1" pax_chance="40" color="White">POLICE4</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="60" comp_shirt="15" comp_pants="35" comp_shoes="26" comp_accessories="36" comp_shirtoverlay="49">MP_F_FREEMODE_01</Ped>
-					<Ped chance="40" prop_hats="0">S_F_Y_COP_01</Ped>
+					<Ped>S_F_Y_RANGER_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
 			</VehicleSet>
 		</NorthYankton>
 	</FemaleStatePatrol>
 	<K9LocalPatrol>
-		<LosSantosCity>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
 			<VehicleSet spawn_distance="120" k9_model="SHEPHERD" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
 				<Vehicles>
 					<Vehicle chance="50" >lcpd5</Vehicle>
@@ -982,21 +1417,27 @@
 					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
 				</LongGuns>
 			</VehicleSet>
-		</LosSantosCity>
-		<LosSantosCounty>
-			<VehicleSet spawn_distance="120" k9_model="ROTTWEILER" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="120" k9_model="SHEPHERD" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
 				<Vehicles>
 					<Vehicle chance="50" >lcpd5</Vehicle>
 					<Vehicle chance="50" >lcpdscout</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped prop_hats="1">ig_lcstrooper</Ped>
 				</Peds>
 				<NonLethals>
 					<NonLethal>WEAPON_STUNGUN</NonLethal>
@@ -1008,177 +1449,324 @@
 				<LongGuns>
 					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
 				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
+		<LosSantosCity>
+			<VehicleSet k9_model="SHEPHERD" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
+				<Vehicles>
+					<Vehicle>POLICE3</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped chance="90" comp_accessories="1" prop_glasses="4" >S_M_Y_COP_01</Ped>
+					<Ped chance="10">S_F_Y_COP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet k9_model="ROTTWEILER" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
+				<Vehicles>
+					<Vehicle>SHERIFF2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped chance="90" prop_glasses="2">S_M_Y_SHERIFF_01</Ped>
+					<Ped chance="10">S_F_Y_SHERIFF_01</Ped>
+				</Peds>
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="120" k9_model="ROTTWEILER" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
+			<VehicleSet k9_model="ROTTWEILER" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
 				<Vehicles>
-					<Vehicle chance="50" >lcpd5</Vehicle>
-					<Vehicle chance="50" >lcpdscout</Vehicle>
+					<Vehicle>SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="90" comp_shirt="2" prop_hats="2" prop_glasses="2">S_M_Y_SHERIFF_01</Ped>
+					<Ped chance="10" comp_shirt="2" prop_hats="2">S_F_Y_SHERIFF_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="50" >lcpd5</Vehicle>
-					<Vehicle chance="50" >lcpdscout</Vehicle>
+					<Vehicle>POLICEOLD2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="60" comp_accessories="1" prop_glasses="1" prop_hats="1">S_M_M_SNOWCOP_01</Ped>
+					<Ped chance="40" prop_glasses="2" prop_hats="2">S_M_M_SNOWCOP_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
 			</VehicleSet>
 		</NorthYankton>
 	</K9LocalPatrol>
 	<K9StatePatrol>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="120" k9_model="SHEPHERD" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
+				<Vehicles>
+					<Vehicle chance="80" pax="1" pax_chance="40">lcpdalamo</Vehicle>
+					<Vehicle chance="20" pax="1" pax_chance="60">ncar</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
+					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
+					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
+					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
+					<Ped chance="10">ig_lccop_traffic</Ped>
+					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
+					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="120" k9_model="SHEPHERD" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
+				<Vehicles>
+					<Vehicle chance="80">lcpdalamo</Vehicle>
+					<Vehicle chance="20">ncar</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped prop_hats="1">ig_lcstrooper</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
 		<LosSantosCity>
-			<VehicleSet spawn_distance="120" k9_model="HUSKY" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
-				<Vehicles>
-					<Vehicle chance="50" >lcpd5</Vehicle>
-					<Vehicle chance="50" >lcpdscout</Vehicle>
-				</Vehicles>
-				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
-				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
-			</VehicleSet>
-		</LosSantosCity>
-		<LosSantosCounty>
-			<VehicleSet spawn_distance="120" k9_model="RETRIEVER" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
-				<Vehicles>
-					<Vehicle chance="50" >lcpd5</Vehicle>
-					<Vehicle chance="50" >lcpdscout</Vehicle>
-				</Vehicles>
-				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
-				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
-			</VehicleSet>
-		</LosSantosCounty>
-		<BlaineCounty>
-			<VehicleSet spawn_distance="120" k9_model="RETRIEVER" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
-				<Vehicles>
-					<Vehicle chance="50" >lcpd5</Vehicle>
-					<Vehicle chance="50" >lcpdscout</Vehicle>
-				</Vehicles>
-				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
-				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
-			</VehicleSet>
-		</BlaineCounty>
-		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet k9_model="HUSKY" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
 				<Vehicles>
 					<Vehicle>FBI2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped comp_pants="2" comp_decals="1" prop_hats="0">S_M_Y_HWAYCOP_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet k9_model="RETRIEVER" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
+				<Vehicles>
+					<Vehicle>FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_pants="2" comp_decals="1" prop_hats="0">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet k9_model="RETRIEVER" k9_tex_face="1" k9_tex_shirt="1" k9_tex_accessories="1">
+				<Vehicles>
+					<Vehicle>FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_pants="2" comp_decals="1" prop_hats="0">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle>FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_pants="2" comp_decals="1" prop_hats="0">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
 			</VehicleSet>
 		</NorthYankton>
 	</K9StatePatrol>
 	<Ambulance>
-		<LosSantosCity>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
 			<VehicleSet spawn_distance="80">
 				<Vehicles>
-					<Vehicle>fdlcamb2</Vehicle>
+					<Vehicle livery="2">fdlcamb2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_M_PARAMEDIC_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="80">
+				<Vehicles>
+					<Vehicle livery="2">fdlcamb2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_M_PARAMEDIC_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+		<LosSantosCity>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle livery="2">AMBULANCE</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped>S_M_M_PARAMEDIC_01</Ped>
@@ -1186,9 +1774,9 @@
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle>fdlcamb2</Vehicle>
+					<Vehicle livery="3">AMBULANCE</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped>S_M_M_PARAMEDIC_01</Ped>
@@ -1196,9 +1784,9 @@
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle>fdlcamb2</Vehicle>
+					<Vehicle livery="2">AMBULANCE</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped>S_M_M_PARAMEDIC_01</Ped>
@@ -1206,9 +1794,9 @@
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle>fdlcamb2</Vehicle>
+					<Vehicle livery="2">AMBULANCE</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped>S_M_M_PARAMEDIC_01</Ped>
@@ -1217,10 +1805,108 @@
 		</NorthYankton>
 	</Ambulance>
 	<FireTruck>
-		<LosSantosCity>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
 			<VehicleSet spawn_distance="80">
 				<Vehicles>
-					<Vehicle>fdlctruck2</Vehicle>
+					<Vehicle livery="2">fdlctruck2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="80">
+				<Vehicles>
+					<Vehicle livery="2">fdlctruck2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+		<LosSantosCity>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle>FIRETRUK</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped comp_shirt="2" comp_accessories="3" prop_hats="1" tex_hats="1">S_M_Y_FIREMAN_01</Ped>
@@ -1228,9 +1914,9 @@
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle>fdlctruck2</Vehicle>
+					<Vehicle>FIRETRUK</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped comp_shirt="2" comp_accessories="3" prop_hats="1" tex_hats="2">S_M_Y_FIREMAN_01</Ped>
@@ -1238,9 +1924,9 @@
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle>fdlctruck2</Vehicle>
+					<Vehicle>FIRETRUK</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped comp_shirt="2" comp_accessories="3" prop_hats="1" tex_hats="2">S_M_Y_FIREMAN_01</Ped>
@@ -1248,9 +1934,9 @@
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle>fdlctruck2</Vehicle>
+					<Vehicle>FIRETRUK</Vehicle>
 				</Vehicles>
 				<Peds>
 					<Ped comp_shirt="2" comp_accessories="3" prop_hats="1" tex_hats="3">S_M_Y_FIREMAN_01</Ped>
@@ -1259,8 +1945,106 @@
 		</NorthYankton>
 	</FireTruck>
 	<Coroner>
-		<LosSantosCity>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
 			<VehicleSet spawn_distance="80">
+				<Vehicles>
+					<Vehicle color="White">SPEEDO</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_M_DOCTOR_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="80">
+				<Vehicles>
+					<Vehicle color="White">SPEEDO</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_M_DOCTOR_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+		<LosSantosCity>
+			<VehicleSet>
 				<Vehicles>
 					<Vehicle color="White">SPEEDO</Vehicle>
 				</Vehicles>
@@ -1270,7 +2054,7 @@
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
 					<Vehicle color="Black">SPEEDO</Vehicle>
 				</Vehicles>
@@ -1280,7 +2064,7 @@
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
 					<Vehicle color="Black">SPEEDO</Vehicle>
 				</Vehicles>
@@ -1290,7 +2074,7 @@
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
 					<Vehicle color="White">SPEEDO</Vehicle>
 				</Vehicles>
@@ -1301,7 +2085,73 @@
 		</NorthYankton>
 	</Coroner>
 	<PoliceTransport>
-		<LosSantosCity>
+		<CustomRegion>
+			<Zones>
+				<Zone>EAHOL</Zone>
+				<Zone>LANCA</Zone>
+				<Zone>MIDPE</Zone>
+				<Zone>MIDPA</Zone>
+				<Zone>MIDPW</Zone>
+				<Zone>NOHOL</Zone>
+				<Zone>NORWO</Zone>
+				<Zone>VASIH</Zone>
+				<Zone>COISL</Zone>
+				<Zone>EASON</Zone>
+				<Zone>HATGA</Zone>
+				<Zone>LANCE</Zone>
+				<Zone>TMEQU</Zone>
+				<Zone>THPRES</Zone>
+				<Zone>PUGAT</Zone>
+				<Zone>STARJ</Zone>
+				<Zone>THTRI</Zone>
+				<Zone>CASGC</Zone>
+				<Zone>CASGR</Zone>
+				<Zone>CHITO</Zone>
+				<Zone>CITH</Zone>
+				<Zone>THXCH</Zone>
+				<Zone>FISSO</Zone>
+				<Zone>FISSN</Zone>
+				<Zone>HAPIN</Zone>
+				<Zone>LITAL</Zone>
+				<Zone>LOWEA</Zone>
+				<Zone>SUFFO</Zone>
+				<Zone>WESMI</Zone>
+				<Zone>BEGGA</Zone>
+				<Zone>BEECW</Zone>
+				<Zone>BOAB</Zone>
+				<Zone>DOWTW</Zone>
+				<Zone>ESHOO</Zone>
+				<Zone>FIISL</Zone>
+				<Zone>FIREP</Zone>
+				<Zone>HOBEH</Zone>
+				<Zone>OUTL</Zone>
+				<Zone>ROTTH</Zone>
+				<Zone>SCHOL</Zone>
+				<Zone>SUTHS</Zone>
+				<Zone>CERHE</Zone>
+				<Zone>CHISL</Zone>
+				<Zone>EISLC</Zone>
+				<Zone>FRANI</Zone>
+				<Zone>MEADP</Zone>
+				<Zone>MEADH</Zone>
+				<Zone>STEIN</Zone>
+				<Zone>WILLI</Zone>
+				<Zone>BOULE</Zone>
+				<Zone>CHAPO</Zone>
+				<Zone>FORSI</Zone>
+				<Zone>INSTI</Zone>
+				<Zone>LTBAY</Zone>
+				<Zone>NRTGA</Zone>
+				<Zone>STHBO</Zone>
+				<Zone>BRALG</Zone>
+				<Zone>BRDBB</Zone>
+				<Zone>BREBB</Zone>
+				<Zone>BRBRO</Zone>
+				<Zone>BOTU</Zone>
+				<Zone>HIBRG</Zone>
+				<Zone>NOWOB</Zone>
+				<Zone>LEAPE</Zone>
+			</Zones>
 			<VehicleSet spawn_distance="80">
 				<Vehicles>
 					<Vehicle chance="90">lcpdspeedo</Vehicle>
@@ -1326,87 +2176,91 @@
 				<LongGuns>
 					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
 				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
+		<CustomRegion>
+			<Zones>
+				<Zone>WESDY</Zone>
+				<Zone>LEFWO</Zone>
+				<Zone>ALSCF</Zone>
+				<Zone>ACTRR</Zone>
+				<Zone>ALDCI</Zone>
+				<Zone>ACTIP</Zone>
+				<Zone>BERCH</Zone>
+				<Zone>NORMY</Zone>
+				<Zone>PORTU</Zone>
+				<Zone>TUDOR</Zone>
+			</Zones>
+			<VehicleSet spawn_distance="80">
+				<Vehicles>
+					<Vehicle chance="90">lcpdspeedo</Vehicle>
+					<Vehicle chance="10">lcpdstockade</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped prop_hats="1">ig_lcstrooper</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</CustomRegion>
+		<LosSantosCity>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle chance="50">POLICET</Vehicle>
+					<Vehicle chance="20">POLICE</Vehicle>
+					<Vehicle chance="15">POLICE2</Vehicle>
+					<Vehicle chance="15">POLICE3</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped chance="30">S_M_Y_COP_01</Ped>
+					<Ped chance="70">S_F_Y_COP_01</Ped>
+				</Peds>
 			</VehicleSet>
 		</LosSantosCity>
 		<LosSantosCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="90">lcpdspeedo</Vehicle>
-					<Vehicle chance="10">lcpdstockade</Vehicle>
+					<Vehicle chance="50">POLICET</Vehicle>
+					<Vehicle chance="25">SHERIFF</Vehicle>
+					<Vehicle chance="25">SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="30">S_M_Y_SHERIFF_01</Ped>
+					<Ped chance="70">S_F_Y_SHERIFF_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
 			</VehicleSet>
 		</LosSantosCounty>
 		<BlaineCounty>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="90">lcpdspeedo</Vehicle>
-					<Vehicle chance="10">lcpdstockade</Vehicle>
+					<Vehicle chance="50">POLICET</Vehicle>
+					<Vehicle chance="25">SHERIFF</Vehicle>
+					<Vehicle chance="25">SHERIFF2</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped chance="30">S_M_Y_SHERIFF_01</Ped>
+					<Ped chance="70">S_F_Y_SHERIFF_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
 			</VehicleSet>
 		</BlaineCounty>
 		<NorthYankton>
-			<VehicleSet spawn_distance="80">
+			<VehicleSet>
 				<Vehicles>
-					<Vehicle chance="90">lcpdspeedo</Vehicle>
-					<Vehicle chance="10">lcpdstockade</Vehicle>
+					<Vehicle chance="50">POLICET</Vehicle>
+					<Vehicle chance="25">POLICEOLD1</Vehicle>
+					<Vehicle chance="25">POLICEOLD1</Vehicle>
 				</Vehicles>
 				<Peds>
-					<Ped chance="15" prop_hats="1">ig_lccop_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_02</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_coat_02</Ped>
-					<Ped chance="10">ig_lccop_traffic</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_01</Ped>
-					<Ped chance="15" prop_hats="1">ig_lccop_vest_02</Ped>
+					<Ped>S_M_M_SNOWCOP_01</Ped>
 				</Peds>
-				<NonLethals>
-					<NonLethal>WEAPON_STUNGUN</NonLethal>
-					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
-				</NonLethals>
-				<HandGuns>
-					<HandGun comp_1="COMPONENT_AT_PI_FLSH">WEAPON_PISTOL</HandGun>
-				</HandGuns>
-				<LongGuns>
-					<LongGun comp_1="COMPONENT_AT_AR_FLSH">WEAPON_CARBINERIFLE</LongGun>
-				</LongGuns>
 			</VehicleSet>
 		</NorthYankton>
 	</PoliceTransport>
