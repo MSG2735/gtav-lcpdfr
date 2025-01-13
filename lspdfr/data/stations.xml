@@ -1,0 +1,64 @@
+<PoliceStations>
+	<Station>
+		<Name>Downtown Police Station</Name>
+		<Agency>lspd</Agency>
+		<ScriptName>downtownInterior</ScriptName>
+		<Position>450.0654f, -993.0596f, 30f</Position>
+		<Heading>320f</Heading>	
+		<GaragePosition>434.0721f, -1014.013f, 28.7524ff; 90f</GaragePosition>
+		<GarageSpawnPosition>435.76f, -1017.744f, 28.48f; 90f</GarageSpawnPosition>
+		<CamStartOffset>3f, -35f, -1f</CamStartOffset>
+		<CamEndOffset>-20f, -37f, 3.75f</CamEndOffset>
+		<CamPointOffset>11f, -3f, 1.5f</CamPointOffset>
+		<DropOffPosition>477f, -1023f, 28.1f</DropOffPosition>
+	</Station>
+	<Station>
+		<Name>Star Junction</Name>
+		<Agency>lcpd</Agency>
+		<ScriptName>lcpd1</ScriptName>
+		<Position>5003.22f, -3155.56f, 14.77f</Position>
+		<Heading>205.71</Heading>
+	</Station>
+	<Station>
+		<Name>Westminster</Name>
+		<Agency>lcpd</Agency>
+		<ScriptName>lcpd2</ScriptName>
+		<Position>4781.34f, -2973.48f, 13.68f</Position>
+		<Heading>268.88</Heading>
+	</Station>
+	<Station>
+		<Name>Northern Gardens</Name>
+		<Agency>lcpd</Agency>
+		<ScriptName>lcpd3</ScriptName>
+		<Position>6168.44f, -1385.92f, 23.89f</Position>
+		<Heading>262.95</Heading>
+	</Station>
+	<Station>
+		<Name>Acter Industrial Park</Name>
+		<Agency>lcpd</Agency>
+		<ScriptName>lcpd4</ScriptName>
+		<Position>3966.01f, -3512.37f, 2.37f</Position>
+		<Heading>93.41</Heading>
+	</Station>
+	<Station>
+		<Name>Leftwood</Name>
+		<Agency>lcpd</Agency>
+		<ScriptName>lcpd5</ScriptName>
+		<Position>4265.75f, -1986.45f, 25.58f</Position>
+		<Heading>152.51</Heading>
+	</Station>
+	<Station>
+		<Name>Liberty City International Airport</Name>
+		<Agency>lcpd</Agency>
+		<ScriptName>lcpd6</ScriptName>
+		<Position>7354.47f, -2807.91f, 7.02f</Position>
+		<Heading>316.98</Heading>
+	</Station>
+	<Station>
+		<Name>East Island</Name>
+		<Agency>lcpd</Agency>
+		<ScriptName>lcpd7</ScriptName>
+		<Position>6420.57f, -2732.30f, 30.83f</Position>
+		<Heading>357.40</Heading>
+	</Station>
+</PoliceStations>
